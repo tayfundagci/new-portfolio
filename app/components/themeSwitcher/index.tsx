@@ -6,7 +6,6 @@ const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true)
     setTheme(fnGetTheme())
@@ -27,7 +26,7 @@ const ThemeSwitcher = () => {
   return (
     <>
       <label id="switch" className="switch">
-        <input type="checkbox" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} id='slider' />
+        <input checked={theme == 'light'} type="checkbox" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} id='slider' />
         <span className="slider round"></span>
       </label>
     </>
