@@ -9,7 +9,16 @@ const ThemeSwitcher = () => {
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true)
+    setTheme(fnGetTheme())
   }, [])
+
+  const fnGetTheme = () => {
+    const theme = localStorage.getItem('theme')
+    if (theme) {
+      return theme
+    }
+    return 'dark'
+  }
 
   if (!mounted) {
     return null
@@ -17,9 +26,10 @@ const ThemeSwitcher = () => {
 
   return (
     <>
-      <div className='cursor-pointer' onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
-        🌙
-      </div>
+      <label id="switch" className="switch">
+        <input type="checkbox" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} id='slider' />
+        <span className="slider round"></span>
+      </label>
     </>
   )
 }

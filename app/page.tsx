@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
+    <main >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi quae necessitatibus debitis dicta cupiditate tempora minus sit optio impedit quas maxime ut assumenda, adipisci, cum porro fugit velit itaque qui.
     </main>
   )
 }

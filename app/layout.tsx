@@ -19,12 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white dark:bg-[#212121]">
+      <body className="bg-white dark:bg-[#212121] text-black dark:text-white ">
         <Providers>
           <Navbar />
-          {children}
-          <Footer />
+          <div className=' container mx-ato  min-h-screen py-5 '>
+            {children}
+          </div>
         </Providers>
+        <Footer />
       </body>
     </html>
   )
