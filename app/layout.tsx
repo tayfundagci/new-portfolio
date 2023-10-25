@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="bg-white dark:bg-[#212121] text-black dark:text-white ">
         <Providers>
           <Navbar />
-          <div className=' container mx-ato  min-h-screen py-5 '>
+          <div className=' container mx-auto  min-h-screen py-5 '>
             {children}
           </div>
         </Providers>
