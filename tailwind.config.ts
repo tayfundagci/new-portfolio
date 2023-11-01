@@ -16,7 +16,29 @@ const config: Config = {
       container: {
         center: true,
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
+      spacing: {
+        128: '32rem',
+      },
+      colors: {
+        'santsg': "#002F87",
+        'light': "#fafafa"
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      }
     },
+    // colors: {
+    //   'santsg': "#002F87",
+    //   'light': "#fafafa"
+    // }
 
   },
   plugins: [],
