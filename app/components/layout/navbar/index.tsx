@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="bg-gray-100 border-gray-200 dark:bg-[#191919] ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">tayfundagci</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">santsg</span>
         </Link>
         <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
           <span className="sr-only">Open main menu</span>
@@ -22,10 +22,10 @@ const Navbar = () => {
               <Link href="/" className="block py-2 pl-3 pr-4 text-black dark:text-white" aria-current="page">Home</Link>
             </li>
             <li>
-              <Link href="/about" className="block py-2 pl-3 pr-4 text-black dark:text-white" aria-current="page">About</Link>
+              <Link href="/about" className="block py-2 pl-3 pr-4 text-black dark:text-white" aria-current="page">Test</Link>
             </li>
             <li>
-              <Link href="/projects" className="block py-2 pl-3 pr-4 text-black dark:text-white" aria-current="page">Projects</Link>
+              <Link href="/projects" className="block py-2 pl-3 pr-4 text-black dark:text-white" aria-current="page">Card</Link>
             </li>
             <li>
               <a className="block py-2 pl-3 pr-4 text-white">

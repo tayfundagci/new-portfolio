@@ -6,6 +6,10 @@
   h1 {
     @apply text-2xl
   }
+
+  .buttons {
+    @apply flex justify-center items-center rounded-full font-bold h-16 md:w-16 mb-3 md:mb-0
+  }
 }
 
 :root {
